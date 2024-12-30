@@ -66,7 +66,7 @@ OWNER_ID =  8109752681 # Sahip hesabın id'si
 
 
 #-------------------------------------------------------------------------
-mongo_client = MongoClient("mongodb+srv://kurt67143:DLArCT171SF9wRKJ@alexsoza.xpoqv.mongodb.net/?retryWrites=true&w=majority&appName=Alexsoza")
+mongo_client = MongoClient(""mongodb+srv://Che4721:Che4721@cluster0.88srl.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster")
 db = mongo_client["tagger_db"]
 blocked_collection = db["blocked"]   
 groups_collection = db["groups"]
@@ -141,11 +141,11 @@ async def start(bot: Client, message: Message):
             [
                 [
                     InlineKeyboardButton("📚 Komutlar", callback_data="cvv"),
-                    InlineKeyboardButton("🗯 Destek", url=f"https://t.me/kumsalmuzikk"),
+                    InlineKeyboardButton("🗯 Destek", url=f"https://t.me/ZumreSohbetTR"),
                  ],
                  [
                     InlineKeyboardButton("❤️‍🔥 Geliştirici", user_id=OWNER_ID),
-                    InlineKeyboardButton("📢 𝖣𝗎𝗒𝗎𝗋𝗎", url=f"https://t.me/Kumsaldestekkanal"),
+                    InlineKeyboardButton("📢 𝖣𝗎𝗒𝗎𝗋𝗎", url=f"https://t.me/ZumreSohbetTR"),
                 ],
                 [
                     InlineKeyboardButton("➕ Beni Grubuna Ekle", url=f"https://t.me/{app.me.username}?startgroup=a"),
@@ -282,11 +282,11 @@ async def _start(bot: Client, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton("📚 Komutlar", callback_data="cvv"),
-                  InlineKeyboardButton("🗯 Destek", url=f"https://t.me/kumsalmuzikk"),
+                  InlineKeyboardButton("🗯 Destek", url=f"https://t.me/ZumreSohbetTR"),
                ],
                [
                     InlineKeyboardButton("❤️‍🔥 Geliştirici", user_id=OWNER_ID),                
-                    InlineKeyboardButton("📢𝖣𝗎𝗒𝗎𝗋𝗎", url=f"https://t.me/Kumsaldestekkanal"),
+                    InlineKeyboardButton("📢𝖣𝗎𝗒𝗎𝗋𝗎", url=f"https://t.me/ZumreSohbetTR"),
                 ],
                 [
                     InlineKeyboardButton("➕ Beni Grubuna Ekle", url=f"https://t.me/{app.me.username}?startgroup=a"),
