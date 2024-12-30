@@ -124,7 +124,7 @@ async def start(bot: Client, message: Message):
         upsert=True
     )
 
-    await bot.send_message(LOG_CHANNEL, f"""
+    await bot.send_message(LOG_CHANNEL, f"-1002482102477"
 #ÖZELDEN START VERDİ#
 
 🤖 **Kullanıcı:** {first_name}
