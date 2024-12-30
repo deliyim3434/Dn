@@ -55,13 +55,13 @@ LOGGER = logging.getLogger(__name__)
 
 API_ID = int(os.environ.get("API_ID", "28217326"))
 API_HASH = os.environ.get("API_HASH", "4800b862b4094e96f42a0b5dc2a558f8")
-BOT_TOKEN = os.environ.get("TOKEN", "7942461090:AAFYsGUoIe5MgUMFNk9VYOdA9ydGPhfP6JM")  
+BOT_TOKEN = os.environ.get("TOKEN", "8119140181:AAEax0h3XprV832w4y7JHRADEY8dPJPVUY8")  
 
-BOT_ID = int(os.environ.get("BOT_ID", "7942461090"))  
+BOT_ID = int(os.environ.get("BOT_ID", "8119140181"))  
 
-BOT_USERNAME = os.environ.get("BOT_USERNAME", "𝐊𝐔𝐌𝐒𝐀𝐋ꗄ➺™ ")  
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002256136144"))  
-OWNER_ID = 6387858072  # Sahip hesabın id'si
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "netfixtaggerbot")  
+LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002482102477"))  
+OWNER_ID =  8109752681 # Sahip hesabın id'si
 
 
 
