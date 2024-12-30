@@ -66,7 +66,7 @@ OWNER_ID =  8109752681 # Sahip hesabın id'si
 
 
 #-------------------------------------------------------------------------
-mongo_client = MongoClient(""mongodb+srv://Che4721:Che4721@cluster0.88srl.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster")
+mongo_client = MongoClient("mongodb+srv://Che4721:Che4721@cluster0.88srl.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster")
 db = mongo_client["tagger_db"]
 blocked_collection = db["blocked"]   
 groups_collection = db["groups"]
