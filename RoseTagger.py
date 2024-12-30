@@ -55,7 +55,7 @@ LOGGER = logging.getLogger(__name__)
 
 API_ID = int(os.environ.get("API_ID", "28217326"))
 API_HASH = os.environ.get("API_HASH", "4800b862b4094e96f42a0b5dc2a558f8")
-BOT_TOKEN = os.environ.get("TOKEN", "8119140181:AAEax0h3XprV832w4y7JHRADEY8dPJPVUY8")  
+BOT_TOKEN = os.environ.get("TOKEN", "8119140181:AAEpvOzyufSpnqJf0Ycd4aJKRQPlNCMSTzM")  
 
 BOT_ID = int(os.environ.get("BOT_ID", "8119140181"))  
 
