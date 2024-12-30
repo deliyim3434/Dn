@@ -57,16 +57,16 @@ API_ID = int(os.environ.get("API_ID", "28217326"))
 API_HASH = os.environ.get("API_HASH", "4800b862b4094e96f42a0b5dc2a558f8")
 BOT_TOKEN = os.environ.get("TOKEN", "8119140181:AAEpvOzyufSpnqJf0Ycd4aJKRQPlNCMSTzM")  
 
-BOT_ID = int(os.environ.get("BOT_ID", "8119140181"))  
+BOT_ID = int(os.environ.get("BOT_ID", "7942461090"))  
 
 BOT_USERNAME = os.environ.get("BOT_USERNAME", "netfixtaggerbot")  
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002482102477"))  
-OWNER_ID =  8109752681 # Sahip hesabın id'si
+OWNER_ID = 6387858072  # Sahip hesabın id'si
 
 
 
 #-------------------------------------------------------------------------
-mongo_client = MongoClient("mongodb+srv://Che4721:Che4721@cluster0.88srl.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster")
+mongo_client = MongoClient("")
 db = mongo_client["tagger_db"]
 blocked_collection = db["blocked"]   
 groups_collection = db["groups"]
@@ -124,7 +124,7 @@ async def start(bot: Client, message: Message):
         upsert=True
     )
 
-    await bot.send_message(LOG_CHANNEL, f"-1002482102477"
+    await bot.send_message(LOG_CHANNEL, f"""
 #ÖZELDEN START VERDİ#
 
 🤖 **Kullanıcı:** {first_name}
