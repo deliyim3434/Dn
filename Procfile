@@ -1,1 +1,1 @@
-bot: python3 RoseTagger.py
+web: yarn start:production
