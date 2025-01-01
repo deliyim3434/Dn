@@ -1,1 +1,1 @@
-yarn start:production
+start:production
