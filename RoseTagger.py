@@ -1770,8 +1770,9 @@ Sebep : {message.text}
 
 
 # .stop komutu
-@app.on_message(filters.command("stop") & filters.group)
-async def stop(client, message):
+
+@app.on_message(filters.command(["stop", "cancel"]) & filters.group)
+async def stop_or_cancel(client, message):
     admins = []
     async for member in client.get_chat_members(message.chat.id, filter=ChatMembersFilter.ADMINISTRATORS):
         admins.append(member.user.id)
@@ -1779,12 +1780,21 @@ async def stop(client, message):
     if message.from_user.id not in admins:
         await message.reply("❗ Bu komutu kullanmak için yönetici olmalısınız!")
         return
-        
+
+    # Kullanılan komutu öğrenelim
+    cmd = message.command[0].lower()
+
     if message.chat.id in rose_tagger:
         del rose_tagger[message.chat.id]
-        await message.reply("⛔ __Etiketleme işlemi durduruldu!__")
+        if cmd == "stop":
+            await message.reply("⛔ __Etiketleme işlemi durduruldu!__")
+        elif cmd == "cancel":
+            await message.reply("🚫 __İşlem iptal edildi!__")
     else:
-        await message.reply("❗ __Etiketleme işlemi şu anda aktif değil.__")
+        if cmd == "stop":
+            await message.reply("❗ __Etiketleme işlemi şu anda aktif değil.__")
+        elif cmd == "cancel":
+            await message.reply("ℹ️ __Şu anda iptal edilecek bir işlem yok.__")
 
     
         
