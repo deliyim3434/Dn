@@ -1770,7 +1770,7 @@ Sebep : {message.text}
 
 
 # .stop komutu
-@app.on_message(filters.command("stop") & filterstoproup)
+@app.on_message(filters.command("stop") & filters.group)
 async def stop(client, message):
     admins = []
     async for member in client.get_chat_members(message.chat.id, filter=ChatMembersFilter.ADMINISTRATORS):
@@ -1785,9 +1785,6 @@ async def stop(client, message):
         await message.reply("⛔ __Etiketleme işlemi durduruldu!__")
     else:
         await message.reply("❗ __Etiketleme işlemi şu anda aktif değil.__")
-
-#--------------------------------------------------------------------------------------------------
-        
 
     
         
