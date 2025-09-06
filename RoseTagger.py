@@ -55,18 +55,18 @@ LOGGER = logging.getLogger(__name__)
 
 API_ID = int(os.environ.get("API_ID", "28217326"))
 API_HASH = os.environ.get("API_HASH", "4800b862b4094e96f42a0b5dc2a558f8")
-BOT_TOKEN = os.environ.get("TOKEN", "7809218190:AAH8BrKiZbv2a5ooxQEh9mFAcQPz1yb9LCo")  
+BOT_TOKEN = os.environ.get("TOKEN", "8425986077:AAEY_tADRC_m-DUqLNcDgIR9UWb3HciV4ME")  
 
-BOT_ID = int(os.environ.get("BOT_ID", "7442492919"))  
+BOT_ID = int(os.environ.get("BOT_ID", "8425986077"))  
 
-BOT_USERNAME = os.environ.get("BOT_USERNAME", "elifbot")  
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002330522694"))  
-OWNER_ID =7465402367   # Sahip hesabın id'si
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "Fizy_Music_Bot")  
+LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002965256618"))  
+OWNER_ID =  8329064200 # Sahip hesabın id'si
 
 
 
 #-------------------------------------------------------------------------
-mongo_client = MongoClient("mongodb+srv://Che4721:Che4721@cluster0.88srl.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0")
+mongo_client = MongoClient("mongodb+srv://sekoma34:sekoma34@cluster0.xn8nhkh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 db = mongo_client["tagger_db"]
 blocked_collection = db["blocked"]   
 groups_collection = db["groups"]
@@ -141,11 +141,11 @@ async def start(bot: Client, message: Message):
             [
                 [
                     InlineKeyboardButton("📚 Komutlar", callback_data="cvv"),
-                    InlineKeyboardButton("🗯 Destek", url=f"https://t.me/EtiketTaggerDuyuru"),
+                    InlineKeyboardButton("🗯 Destek", url=f""),
                  ],
                  [
                     InlineKeyboardButton("❤️‍🔥 Geliştirici", user_id=OWNER_ID),
-                    InlineKeyboardButton("📢 𝖣𝗎𝗒𝗎𝗋𝗎", url=f"https://t.me/EtiketTaggerDuyuru"),
+                    InlineKeyboardButton("📢 𝖣𝗎𝗒𝗎𝗋𝗎", url=f"https://t.me/"),
                 ],
                 [
                     InlineKeyboardButton("➕ Beni Grubuna Ekle", url=f"https://t.me/{app.me.username}?startgroup=a"),
@@ -282,11 +282,11 @@ async def _start(bot: Client, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton("📚 Komutlar", callback_data="cvv"),
-                  InlineKeyboardButton("🗯 Destek", url=f"https://t.me/EtiketTaggerDuyuru"),
+                  InlineKeyboardButton("🗯 Destek", url=f"https://t.me/"),
                ],
                [
                     InlineKeyboardButton("❤️‍🔥 Geliştirici", user_id=OWNER_ID),                
-                    InlineKeyboardButton("📢𝖣𝗎𝗒𝗎𝗋𝗎", url=f"https://t.me/EtiketTaggerDuyuru"),
+                    InlineKeyboardButton("📢𝖣𝗎𝗒𝗎𝗋𝗎", url=f"https://t.me/"),
                 ],
                 [
                     InlineKeyboardButton("➕ Beni Grubuna Ekle", url=f"https://t.me/{app.me.username}?startgroup=a"),
@@ -396,7 +396,7 @@ async def chatModeHandler(bot: Client, msg: Message):
 
     reply = None
 
-    if text.startswith("kumsal"): # * Mesaj acelya ile başlıyorsa cevap veriyoruz
+    if text.startswith("che"): # * Mesaj che ile başlıyorsa cevap veriyoruz
         reply = random.choice(kumsal)
         await asyncio.sleep(0.06)
 
@@ -1770,7 +1770,7 @@ Sebep : {message.text}
 
 
 # .stop komutu
-@app.on_message(filters.command("stop") & filters.group)
+@app.on_message(filters.command("cancel") & filterstoproup)
 async def stop(client, message):
     admins = []
     async for member in client.get_chat_members(message.chat.id, filter=ChatMembersFilter.ADMINISTRATORS):
