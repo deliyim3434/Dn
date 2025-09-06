@@ -129,7 +129,7 @@ kumsal = (
 )
 
 sahip = (
-"@Ragnarben **baba Sana sesleniyorlarr**",
+"@Esreftek4621 **baba Sana sesleniyorlarr**",
 "**Adamdır** 🌹",
 "**Adamımmmm**",
 "**Sahibime mi sesleniyorsun?**",
