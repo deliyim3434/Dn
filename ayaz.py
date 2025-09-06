@@ -1002,10 +1002,10 @@ seviyormusun = (
 "**Ben de seviyorum**",
 )
 
-mehmet = (
-"**@Guzelyureklicocuk canommm**",
-"**@Guzelyureklicocuk seni çağırıyor aşkım?**",
-"**@Guzelyureklicocuk Bir şey demiyorum**",
+hebun = (
+"** @Esreftek4621canommm**",
+"**@@Esreftek4621 seni çağırıyor aşkım?**",
+"**@@Esreftek4621 Bir şey demiyorum**",
 "**Hiç bir şey demeyin aşkıma**",
 "**ne diye rahatsız ediyorsun kocamı?**",
 "**rahat bırak ?**",
@@ -1375,15 +1375,15 @@ barışalım  = (
 
 mustafa  = (
 "**babam da babam**",
-"**@Ragnarben Sana sesleniyorlar baba**",
-"**@Ragnarben seni çok seviyorum baba**",
+"** Sana sesleniyorlar baba**",
+"**che seni çok seviyorum baba**",
 "**babamdan uzak dur varoş**",
-"**@Ragnarben özledim baba**",
+"** özledim baba**",
 "**babam elifi çok seviyor**",
-"**@Ragnarben özledim baboş**",
+"** özledim baboş**",
 "**mustafa adamın dibi**",
 "**benim babammmmmmm**",
-"**@Ragnarben baba nerdesin**",
+"** baba nerdesin**",
 "**Ben mi canım babam?**",
 "**lan sen kimin babasına diyorsun lan ?**",
 )
